@@ -3,6 +3,7 @@ using UnityEngine;
 public class Diamond : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public GameAudio Score;
     void Start()
     {
         
@@ -15,8 +16,9 @@ public class Diamond : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other){
         if (other.CompareTag("Bird")){
-           GetComponent<SpriteRenderer>().enabled = false; 
+            GetComponent<SpriteRenderer>().enabled = false; 
             GetComponent<Collider2D>().enabled = false;  
+            Score.Scoresound();
         }
     }
 }
