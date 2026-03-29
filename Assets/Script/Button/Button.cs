@@ -29,29 +29,19 @@ public class Button : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Bird"))
-        {
+    void OnTriggerEnter2D(Collider2D other){
+        if (other.CompareTag("Bird")){
             isPressed = true;
-
             if (door != null)
                 door.Disappear();
-
-            Debug.Log("press");
         }
     }
 
-    void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Bird"))
-        {
+    void OnTriggerExit2D(Collider2D other){
+        if (other.CompareTag("Bird")){
             isPressed = false;
-
             if (door != null)
                 door.Appear();
-
-            Debug.Log("ex");
         }
     }
 }
