@@ -573,8 +573,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc6a8e747b19f849b6cec4719c7a1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LoadSceneButton
-  redDoor: {fileID: 0}
-  blueDoor: {fileID: 0}
 --- !u!4 &540271585
 Transform:
   m_ObjectHideFlags: 0
@@ -624,8 +622,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 287.3, y: 50}
+  m_AnchoredPosition: {x: 4.8, y: -3.1}
+  m_SizeDelta: {x: 203.3578, y: 56.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &846498800
 MonoBehaviour:
@@ -647,7 +645,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Learn how to play
+  m_text: 'How to play
 
 '
   m_isRightToLeft: 0
@@ -977,8 +975,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -212.5, y: 177.7}
-  m_SizeDelta: {x: 302.9, y: 62.4}
+  m_AnchoredPosition: {x: -268.2, y: 178.6}
+  m_SizeDelta: {x: 208.66, y: 62.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1577844180
 MonoBehaviour:

@@ -4,6 +4,7 @@ public class ButtonTF_Diamond : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Door door;
+    public GameAudio Score;
     bool isPressed = false;
     void Start()
     {
@@ -18,6 +19,9 @@ public class ButtonTF_Diamond : MonoBehaviour
         if (other.CompareTag("Bird")&&isPressed==false){
             door.Disappear(); 
             isPressed=true;
+            GetComponent<SpriteRenderer>().enabled = false; 
+            GetComponent<Collider2D>().enabled = false;  
+            Score.Scoresound();
         }
     }
     
